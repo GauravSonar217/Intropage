@@ -161,32 +161,32 @@
 
         @media screen and (max-width: 576px) {
             header {
+                height: auto;
                 padding: 1.5rem 1rem;
 
                 .textCont {
                     padding: 0;
                     padding-top: 2rem;
+                    padding-bottom: 5rem;
                 }
 
                 h1 {
                     font-size: 2.4rem;
-                    line-height: 2.6rem;
+                    line-height: 3rem;
                     margin-bottom: 1.5rem;
                 }
 
                 .headerImg {
                     width: 100%;
-                    height: 50%;
+                    height: 45vh;
                     object-fit: cover;
                     border-radius: 42px;
-                    /* margin-bottom: 2.5rem; */
                 }
-
 
                 p {
                     font-size: 1rem;
                     line-height: 1.3rem;
-                    margin-bottom: 1rem;
+                    margin-bottom: 1.5rem;
                 }
 
                 .sound {
@@ -197,37 +197,37 @@
                     cursor: pointer;
                     animation: fadeIn 1.2s ease-in-out forwards;
                 }
-
             }
-
         }
 
         @media only screen and (max-width: 320px) {
             header {
-                padding: 1rem 1rem;
+                height: auto;
+                padding: 1rem;
 
                 h1 {
-                    font-size: 1.5rem;
-                    line-height: 1.8rem;
-                    margin-bottom: 0.5rem;
+                    font-size: 1.8rem;
+                    line-height: 2.2rem;
+                    margin-bottom: 1rem;
                 }
 
                 .textCont {
                     padding: 0;
-                    padding-top: 1rem;
+                    padding-top: 2rem;
+                    padding-bottom: 4rem;
                 }
 
                 .headerImg {
                     width: 100%;
-                    height: 45%;
+                    height: 45vh;
                     object-fit: cover;
                     border-radius: 42px;
                 }
 
                 p {
-                    font-size: 0.8rem;
-                    line-height: 1.1rem;
-                    margin-bottom: 0.5rem;
+                    font-size: 0.9rem;
+                    line-height: 1.3rem;
+                    margin-bottom: 1rem;
                 }
 
                 .sound {
@@ -294,7 +294,7 @@
         audio.id = 'backgroundAudio';
         audio.src = 'media/beauty-of-nature-background-vlog-music-151643.mp3';
         audio.loop = true;
-        audio.autoplay = true;
+        // audio.autoplay = true;
         audio.volume = 0.5;
         document.body.appendChild(audio);
 
@@ -304,7 +304,7 @@
         document.addEventListener('DOMContentLoaded', () => {
             typeWriter();
             fadeInText();
-            playAudio();
+            // playAudio();
         });
     </script>
 
