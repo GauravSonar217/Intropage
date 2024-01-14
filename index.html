@@ -45,7 +45,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
         }
 
         h1 {
@@ -162,23 +162,23 @@
         @media screen and (max-width: 576px) {
             header {
                 height: auto;
-                padding: 1.5rem 1rem;
+                padding: 1rem;
 
                 .textCont {
                     padding: 0;
                     padding-top: 2rem;
-                    padding-bottom: 5rem;
+                    padding-bottom: 4rem;
                 }
 
                 h1 {
-                    font-size: 2.4rem;
-                    line-height: 3rem;
+                    font-size: 2.2rem;
+                    line-height: 2.5rem;
                     margin-bottom: 1.5rem;
                 }
 
                 .headerImg {
                     width: 100%;
-                    height: 45vh;
+                    height: 40vh;
                     object-fit: cover;
                     border-radius: 42px;
                 }
@@ -206,20 +206,20 @@
                 padding: 1rem;
 
                 h1 {
-                    font-size: 1.8rem;
-                    line-height: 2.2rem;
+                    font-size: 1.6rem;
+                    line-height: 2rem;
                     margin-bottom: 1rem;
                 }
 
                 .textCont {
                     padding: 0;
-                    padding-top: 2rem;
-                    padding-bottom: 4rem;
+                    padding-top: 1.5rem;
+                    padding-bottom: 3rem;
                 }
 
                 .headerImg {
                     width: 100%;
-                    height: 45vh;
+                    height: 40vh;
                     object-fit: cover;
                     border-radius: 42px;
                 }
@@ -244,6 +244,9 @@
         <img src="./media/introImg.jpg" alt="Header Image" class="headerImg">
 
         <div class="textCont">
+            <audio loop autoplay volume="0.5" id="backgroundAudio">
+                <source source src="./media/beauty-of-nature-background-vlog-music-151643.mp3" type="audio/ogg">
+            </audio>
             <h1></h1>
             <p>We're enhancing your adventure! Trek Tour Travel is currently under maintenance to bring you an even more
                 seamless and exciting trekking experience. Apologies for any inconvenience, and we can't wait to unveil
@@ -285,29 +288,14 @@
             }, 2500);
         }
 
-        function playAudio() {
-            const audio = document.getElementById('backgroundAudio');
-            audio.play();
-        }
-
-        const audio = document.createElement('audio');
-        audio.id = 'backgroundAudio';
-        audio.src = 'media/beauty-of-nature-background-vlog-music-151643.mp3';
-        audio.loop = true;
-        audio.autoplay = true;
-        audio.volume = 0.5;
-        document.body.appendChild(audio);
-
         const audioControlButton = document.querySelector('.sound');
         audioControlButton.addEventListener('click', toggleAudio);
 
         document.addEventListener('DOMContentLoaded', () => {
             typeWriter();
             fadeInText();
-            playAudio();
         });
     </script>
-
 </body>
 
 </html>
